@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 1.35em;
+    line-height:1em;
+    margin: 15px 0;
+    color: black;
+}
+
+h3 {
+    font-size: 0.5em;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 0.6em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: hsl(158, 36%, 37%);
+}
+
+.before-discount {
+    font-size: 0.5em;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.5em;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    font-size: 0.6em;
+}
+
+button:hover {
+    background-color:  hsl(158, 38%, 25%);
+    cursor: pointer;
+}
+
+button svg {
+    transform: scale(0.7);
+    margin-right: 5px;
+}
+/* @media (max-width: 375px) {
+    figure {
+        height: auto;
+        background-image: url("./images/image-product-mobile.jpg");
+    }
+} */
+
+@media (min-width: 376px) and (max-width: 1440px) {
+    .container {
+        height:300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width:400px;
+        margin: auto;
+    }
+    
+    .desktop-img {
+        width: 100%;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+
+    section {
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        height:auto;
+        display: grid;
+        grid-template-rows: 175px 1fr;
+        width:250px;
+        margin: auto;
+    }
+    
+    .desktop-img {
+        display: none;
+    }
+    
+    .mobile-img {
+        width: 100%;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+
+    section {
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+}
