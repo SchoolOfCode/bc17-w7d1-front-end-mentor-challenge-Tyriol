@@ -79,37 +79,6 @@ button svg {
     transform: scale(0.7);
     margin-right: 5px;
 }
-/* @media (max-width: 375px) {
-    figure {
-        height: auto;
-        background-image: url("./images/image-product-mobile.jpg");
-    }
-} */
-
-@media (min-width: 376px) and (max-width: 1440px) {
-    .container {
-        height:300px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width:400px;
-        margin: auto;
-    }
-    
-    .desktop-img {
-        width: 100%;
-        border-top-left-radius: 0.5em;
-        border-bottom-left-radius: 0.5em;
-    }
-    
-    .mobile-img {
-        display: none;
-    }
-
-    section {
-        border-top-right-radius: 0.5em;
-        border-bottom-right-radius: 0.5em;
-    }
-}
 
 @media (max-width: 375px) {
     .container {
@@ -132,6 +101,31 @@ button svg {
 
     section {
         border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+    .container {
+        height:300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width:400px;
+        margin: auto;
+    }
+    
+    .desktop-img {
+        width: 100%;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+
+    section {
+        border-top-right-radius: 0.5em;
         border-bottom-right-radius: 0.5em;
     }
 }
